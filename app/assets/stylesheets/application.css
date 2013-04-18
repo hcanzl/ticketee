@@ -46,8 +46,10 @@ input[type=file] {
     font-weight: bold;
 }
 
+$notice-color #FF3444
+
 #notice {
-    background: #85FF00;
+    background: $notice-color;
     color: black;
 }
 

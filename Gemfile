@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.13'
+#gem 'rails', '3.2.13'
+gem 'rails', '~> 3.2'
 gem 'dynamic_form', '1.1.4'
 
 # Bundle edge Rails instead:
@@ -40,6 +41,7 @@ gem 'jquery-rails'
 
 group :test, :development do
   gem 'rspec-rails', '~> 2.11'
+  gem 'factory_girl', '2.6.4'
 end
 
 group :test do
