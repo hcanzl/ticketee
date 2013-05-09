@@ -2,6 +2,8 @@ require 'spec_helper'
 
 feature "Deleting projects" do
   scenario "Deleting a project" do
+    sign_in_as!(Factory(:admin_user))
+
     Factory(:project, :name => "Textmate 2")
     visit "/"
     click_link "Textmate 2"
