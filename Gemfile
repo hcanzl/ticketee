@@ -39,8 +39,12 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+# group :production do
+#   gem 'pg'
+# end
 
 group :test, :development do
+  #gem 'sqlite3'
   gem 'rspec-rails', '~> 2.11'
   gem 'factory_girl', '2.6.4'
 end
@@ -48,6 +52,7 @@ end
 group :test do
   gem 'capybara', '1.1.2'
   gem 'email_spec', '1.2.1'
+  gem 'launchy'
 end
 
 gem 'devise', '2.1.0'
