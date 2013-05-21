@@ -7,6 +7,10 @@ class User < ActiveRecord::Base
          :confirmable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible :email, :password, :password_confirmation, :remember_me
-  # attr_accessible :title, :body
+  attr_accessible :email, :password, :admin, :as => :admin
+  attr_accessible :password_confirm, :remember_me
+
+  def to_s
+    "#{email} (#{admin? ? "Admin" : "User"})"
+  end
 end
