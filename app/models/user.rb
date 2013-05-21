@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :admin, :as => :admin
-  attr_accessible :password_confirm, :remember_me
+  attr_accessible :password_confirm, :remember_me, :as => :admin
 
   def to_s
     "#{email} (#{admin? ? "Admin" : "User"})"
