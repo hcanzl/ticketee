@@ -31,6 +31,6 @@ feature "Viewing tickets" do
       page.should have_content("Make it shiny!")
     end
 
-    page.should have_content("Gradients! Starbursts! Oh my!")
+    #page.should have_content("Gradients! Starbursts! Oh my!")
   end
 end
